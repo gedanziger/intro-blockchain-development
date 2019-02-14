@@ -1,6 +1,6 @@
 # Intro to Blockchain Development
 
-### Class 4 - Look at Ethereum
+### Class 5 - Intro to Solidity and Smart Contracts
 
 Now we will explore Solidity and Smart Contracts a bit more:
 
