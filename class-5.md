@@ -25,7 +25,7 @@ Geth, which we saw before, is just a node of the ethereum blockchain we can run 
 
 [Remix](https://remix.ethereum.org) is a popular web-based IDE for solidity and smart contracts. While working on new code, you can configure your project through there, handle deployment to a local node, testnet and more.
 
-[Truffle](https://truffleframework.com/docs/truffle/overview) - Truffle is a testing framework for solidity. As the smart contracts are immutable, we'll need to run extensive tests before we can deploy it.
+[Truffle](https://truffleframework.com/docs/truffle/overview) - Truffle is development environment, testing framework for smart contract and asset pipeline for blockchains using the EVM. It allows you to deploy your smart contracts in the test environment and test them. As the smart contracts are immutable, we'll need to run extensive tests before we can deploy it.
 
 [Metamask](https://metamask.io/) - Metamask is an in-browser chrome extension that helps call contracts and run tests.
 
