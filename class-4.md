@@ -41,4 +41,38 @@ Ethereum uses the EVM to run sets of instructions. State on the blockchain is mu
 
 There are many different networks to choose from. Different individuals are constantly trying to improve the network, and leave reference implementations in a test state to compare with the main network. This main network is referred to as a "mainnet", while all of the different test networks are referred to as a "testnet". Developers often create applications first on a testnet because ether there has no value. It is often easily mined or given away for free to newcomers.
 
+#### 1. Installing geth
+
+##### 1) Installing from go-ethereum source code
+
 To get started with ethereum, download a client. The most popular and recommended version is the Go implementation of Ethereum (go-ethereum or geth). You can find it in the repository [here](https://github.com/ethereum/go-ethereum).
+
+##### 2) Installing from PPA
+
+```bash
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository -y ppa:ethereum/ethereum
+$ sudo apt-get update
+$ sudo apt-get install ethereum
+
+```
+#### 2. Run geth as a service in background
+
+1. Goto   /etc/systemd 
+2. Create a file geth.service
+```
+[Unit]
+Description=Geth
+[Service]
+Type=simple
+User=root
+Restart=always
+ExecStart=/usr/bin/geth --testnet --networkid=3 --verbosity 3 --syncmode=fast --datadir=/opt/.ethereum --rpccorsdomain="*" --cache=1024 --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --rpcapi eth,personal,net,web3
+[Install]
+WantedBy=default.target
+```
+3. Run geth as a service
+```bash
+$ systemctl --user enable geth.service
+$ systemctl --user start geth.service
+```
