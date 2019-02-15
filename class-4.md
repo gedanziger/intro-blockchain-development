@@ -22,9 +22,9 @@ Ethereum another widely-used cryptocurrency earlier. While the main goal of bitc
 
 ### Smart Contracts
 
-While cryptocurrencies have signed transactions that another party can verify, Ethereum makes use of a signed set of instructions that reflect a change to a shared state on the Ethereum virtual machine. In short, Ethereum allows many parties to verify the same pattern of changes to a program in code, and replicate those changes on any machine. This lets users run a program in a predictable manner on any computer, not just their own.
+While cryptocurrencies have signed transactions that another party can verify, Ethereum makes use of a signed set of instructions that reflect a change to a shared state on the Ethereum virtual machine. In short, Ethereum allows many parties to verify the same pattern of changes to a program in code, and replicate those changes on any machine. This lets users run a program in a predictable manner on any computer, not just their own. {For example, ...}
 
-The sets of instructions to execute are sent through transactions, in a similar manner to bitcoin. In Ethereum, this lets a user define much more complicated logic than through the scripting language signed to bitcoin transactions. The Ethereum Virtual Machine (EVM) that runs these programs is Turing complete, so we can represent any set of states or write a program on it if necessary.
+The sets of instructions to execute are sent through transactions, in a similar manner to bitcoin. In Ethereum, this lets a user define much more complicated logic than through the scripting language signed to bitcoin transactions. The Ethereum Virtual Machine (EVM) that runs these programs is [Turing](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf) [complete](https://en.wikipedia.org/wiki/Turing_completeness), so we can represent any set of states or write a program on it if necessary.
 
 ### Why are smart contracts important?
 
