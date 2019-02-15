@@ -15,13 +15,13 @@ Reading & Videos:
 
 ### What tools do people use to write smart contracts?
 
-Most development of smart contracts across blockchains at the time of this course is in solidity. This is largely because Ethereum is the first smart contract system and had a lot of community support. There simply isn't the breadth of developer tools, learning resources and everything that goes along with development on its competitors. 
+Most development of smart contracts across blockchains at the time of this course is in written in Solidity. {This}{Is this referring to the speed/stability of development?} is largely because Ethereum is the first smart contract system and had a lot of community support. There simply isn't the breadth of developer tools, learning resources and everything that goes along with development on its competitors. {Why are we talking about lack of resources for competitors when the discussion was related to stability of blockchain development?} {Needs more sentences about Solidity. https://blockgeeks.com/guides/solidity/}
 
-Generally, a user will start out testing on a local node, move to a testnet to view the contract in an environment with multiple users, and finally, once very confident in the contracts, deploy them to a mainnet. To do this, we will use some basic tools called Geth, Truffle and Remix
+{Please add sentences about the tools that came about before getting into technical detail here.} Generally, a user will start out testing on a local node, move to a testnet to view the contract in an environment with multiple users, and finally, {once very confident in the contracts}{Please define "confidence" if it hasn't been defined yet.}, deploy them to a mainnet. To do this, we will use some basic tools called Geth, Truffle and Remix
 
 ### Development Environment
 
-Geth, which we saw before, is just a node of the ethereum blockchain we can run locally. It has a particular service that we will talk to for handling each of the specific functions, referred to as web3. This is a play on expanding web 2.0, a receent upate to standard internet technologies.
+Geth (from [Class 4]{Link to class 4 md here}), is just a node of the Ethereum blockchain we can run locally. It has a particular service that we will talk to for handling each of the specific functions, referred to as web3. This is a play on expanding web 2.0, a recent update to {standard Internet technologies}{I don't know what 'standard internet tech' refers to.}. {This entire sentence might not be necessary. It might be better to just explain what web3 is instead of discussing its history.}
 
 [Remix](https://remix.ethereum.org) is a popular web-based IDE for solidity and smart contracts. While working on new code, you can configure your project through there, handle deployment to a local node, testnet and more.
 
@@ -29,7 +29,7 @@ Geth, which we saw before, is just a node of the ethereum blockchain we can run 
 
 [Metamask](https://metamask.io/) - Metamask is an in-browser chrome extension that helps call contracts and run tests.
 
-[Infura](https://infura.io/) - Instead of setting up a node locally and waiting to sync on a new environment, you can also use infura. This is a very simple way to get data from the testnet or mainnet on ethereum, and submit transactions. Keep in mind that it is a bit unreliable for production applications, however.
+[Infura](https://infura.io/) - Instead of setting up a node locally and waiting to sync on a new environment, you can also use Infura. This is a very simple way to get data from the testnet or mainnet on Ethereum, and submit transactions. Keep in mind that it is a bit unreliable for production applications, however.
 
 ### Deploying a basic contract
 
