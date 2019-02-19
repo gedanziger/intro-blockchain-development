@@ -9,7 +9,7 @@
 # Installation
 1. install truffle
 
-`sudo npm install -g truffle`
+`sudo npm install -g truffle@4.1.14`
 
 2. install packages
 
