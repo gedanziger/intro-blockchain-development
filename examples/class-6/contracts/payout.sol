@@ -9,7 +9,6 @@ contract Payout {
     event SetInstantSendETH(bool instantSendEth);
     event WeiRaised(uint weiRaised);
     event Deposit(address sender, uint amount);
-    event WhitelistResult(bool result);
     event Withdraw(address paymentAddress, uint amount);
 	modifier onlyPaymentAddress() {
         require(msg.sender == paymentAddress);
@@ -88,7 +87,6 @@ contract Payout {
             answer := mload(ptr) // Assign output to answer var
             mstore(0x40,add(ptr,0x24)) // Set storage pointer to new space
         }
-        emit WhitelistResult(answer);
         require(answer == true);
     }
 

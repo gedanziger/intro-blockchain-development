@@ -3,23 +3,16 @@ contract Whitelist {
 	mapping (address => bool) whitelist;
 	
     event Whitelisted(address whitelistAddr, bool result);
-    event RecoveredAddress(address recoverAddr);
-	event Signed(bool signed);
-    event CheckWhiteList(address sender, bool result);
 
 	function addWhitelist(bytes _signature) public {
         bytes32 messageHash = keccak256("\x19Ethereum Signed Message:\n17I love MouseBelt!");
-        //emit MessageHash(messageHash);
         // Recover address of message signer
         address recovered = getRecoveredAddress(_signature, messageHash);
-        emit RecoveredAddress(recovered);
         require(recovered == msg.sender);
-        emit Signed(true);
         Add(msg.sender);
     }
 
     function checkWhitelist(address _addr) external view returns(bool) {
-        emit CheckWhiteList(_addr, whitelist[_addr]);
         return whitelist[_addr];
     }
 
