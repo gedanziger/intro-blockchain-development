@@ -34,3 +34,6 @@ Geth (from [Class 4]{Link to class 4 md here}), is just a node of the Ethereum b
 ### Deploying a basic contract
 
 A contract will be released at the time of the class that we will run through and deploy, to elaborate more on solidity code.
+
+[Smart contract deploy with remix](https://medium.com/coinmonks/a-really-simple-smart-contract-on-how-to-insert-value-into-the-ethereum-blockchain-and-display-it-62c455610e98)
+[Smart contract deploy with truffle](https://medium.com/haloblock/deploy-your-own-smart-contract-with-truffle-and-ganache-cli-beginner-tutorial-c46bce0bd01e)
