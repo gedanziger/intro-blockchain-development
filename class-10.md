@@ -17,11 +17,13 @@ Reading & Videos:
 
 ### Private Blockchains
 
+In a public blockchain, we have an encironment where anyone can join or interact. A private blockchain takes a far different approach, where rules govern which users can connect to the network, what data they can read, and how they can manipulate a shared state or ledger. 
 
+At a first glance, this might appear to disagree with many of the principles and reasons for forming a distributed ledger in the first place. These public networks were peer-to-peer with any party contributing transactions to lower barriers to entry and validate a shared state for themselves. In fact, many outspoken proponents of public networks and advocates of the censorship-resistant properties discourage the use of private blockchains. However, just because a network isn't free and open for all parties to use does not mean that it has no benefits over a fully centralized system.
+
+In a private blockchain, the other components of a blockchain still apply. All of the data is cryptographically signed, so it may be verified against the publisher to see that the party who submitted a transaction is able to update this data. In fact, this concept simply builds on permission to send currency in existing cryptocurrency systems. For example, in Bitcoin a user is only able to send a transaction that has UTXOs they have authorized themself. They can't transact using another user's unspent balance. A permissioned blockchain might restrict access from just transactions to manipulating the chain state at all (instead of not committing another user's balance, a user might not be able to transact at all unless they are approved).
 
 ### Permissioned Access
-
-
 
 ### Hyperledger Project
 
