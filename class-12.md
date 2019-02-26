@@ -40,23 +40,25 @@ In public blockchains like Bitcoin we were solely focused on how to make transfe
 
 #### Supply Chain
 
-TODO
+A private ledger in a supply chain context can allow multiple companies exchange assets to record and validate the exchanges on a shared database. Audit partners can be added to the chain to help verify and make sure a record of where an asset started, where it ended up and who monitored the transfer exists.
 
 #### Agriculture
 
-TODO
+In agriculture, the supply chain example is especially interesting. Many food items travel long distances, and in the event of disease or other problems, it can be very difficult to track back to the origin. A blockchain system from growers to distributors can help quickly track and recall bad batches of food.
 
 #### Identity
 
-TODO
+Identity is constantly investigated in the constext of blockchains. The Blockchain at Berkeley article breaks out some possile applications of a blockchain system to this, using a private key to very simply handle digital signatures granting verification or authorization. Different parties can each authorize a participant or wallet for particular actions, or endorse it on the network.
+
+The private blockchain aspect allows users to limit who is able to see aspects of their identity simply through ACL rules.
 
 #### Certification & Audit
 
-TODO
+Users can often earn certifications denoting expertise, assets can be certified after passing different levels of tests. A shared ledger makes this very difficult to fake, and if certifications are proven to be given out falsely, it can be traced back to an auditor.
 
 #### Banking & Trade
 
-TODO
+In banking and trade applications, some institutions may want to share and validate information about specific individuals. For example, maybe 5 banks want to share risk-related information about an individual outside of their credit score, to help reduce bad actors in a network. Additionally, banks could easily define and share assets between each other, showing the flow of funds in the shared ledger.
 
 ### Other Private/Permissioned Blockchains
 
