@@ -15,5 +15,8 @@
     "chai": "^4.2.0",
     "chai-bignumber": "^3.0.0",
     "web3": "^1.0.0-beta.46"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.4"
   }
 }
