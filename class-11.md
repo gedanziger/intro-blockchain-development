@@ -23,11 +23,20 @@ Setup the development environment (NOTE - OSX or Ubuntu recommended):
 
 ### Deploying a Business Network
 
+We'll be following pretty closely to the developer tutorial. You can see it [here](https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial.html).
+
 ### Adding Transactions and Queries
+
+Queries will follow from the example in [the composer docs](https://hyperledger.github.io/composer/latest/tutorials/queries).
 
 ### Access Control Language
 
+Access control documentation can be found [here](https://hyperledger.github.io/composer/latest/reference/acl_language).
+
 ### Updating the Network
+
+To update the network, first create a new .bna file with a different versioning following [these](https://hyperledger.github.io/composer/latest/business-network/upgrading-bna) steps. 
 
 ### Other Concepts and Applications
 
+Please prepare any questions you have about applications and other concepts in the class.
