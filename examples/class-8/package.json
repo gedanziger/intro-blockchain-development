@@ -1,0 +1,23 @@
+{
+  "name": "class-8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-bignumber": "^3.0.0",
+    "web3": "^1.0.0-beta.46"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.4",
+    "web3-utils": "^1.0.0-beta.46"
+  }
+}
