@@ -1,6 +1,6 @@
 # Intro to Blockchain Development
 
-### Class 17 - Exchange & Wallet Security -  Notable Incidents
+### Class 16 - Exchange Security -  Notable Incidents
 
 It is very difficult to attack a blockchain at the protocol level. Generally, most attacks happen at the the level of a user, wallet or exchange. We'll run over some: 
 
@@ -37,8 +37,27 @@ In more recent history, Cryptopia, a New Zealand based exchange, was hacked in J
 
 Always use cold storage for a centralized applications, when the use case permits it. Keeping funds segregated from the internet drastically limits the chances of a compromise.
 
+### BitPay
+
+The BitPay hack was an not an issue of the platform security, but in communications tools the team used. Attackers were able to execute a phishing scam on the CFO of the company and collect his email password. Then, they impersonated him to send requests to the CEO requesting funds sent out. Almost $2m was stolen in this manner.
+
 ##### What we can learn from it
 
-When handlin
+Even the best security practices can be compromised by human error. When a team member is requesting money, it is best to have a standard practice for the request. For large sums of money, confirm it over a second medium of communication.
 
-This 
+Additionally, keep a good password security practices. All employees, even ops and people talking to those handling funds, should observe the following:
+
+1. Use strong passwords and do not reuse them between accounts
+2. Use multifactor authentication whenever possible (TOTP is better than SMS)
+3. Be vigilant for strange behavior when requesting credentials or funds. If gives a strange request, make a habit to double check with them
+
+
+### BitGrail
+
+A large amount of the cryptocurrency Nano ($170M worth at the time of the hack) was stolen on the BitGrail exchange a Hack incident in early 2018. An attacker was able to steal the funds held when discovering an exploit on the withdrawals page. It has been reported that the only validation performed was client side, so users could withdraw larger amounts than their balance by modifying javascript in their browsers to remove client side checks. Afterwards, they could withdraw a larger amount than their balance. An attacker was able to withdraw the overwhelming majority of NANO held on the exchange (17 million of the holdings, with 4 million remaining on the exchange).
+
+##### What we can learn from it
+
+1. Client side validation should be used only for user experience. It is not trustworthy, as a bad actor can send a different request than you are expecting to receive.
+2. Cold storage should always be used. An application shouldn't have to send or receive 80% of funds out to users at a time. Only as many funds as an exchange is willing to risk should be held in hot wallets.
+3. Reasonable checks should be put in place on withdrawals. Withdrawal limits & large transactions outside of normal behavior should not process immediately in the system, and instead require some human review or a longer time to clear.
