@@ -23,3 +23,4 @@ Proof of Stake offers a different solution. Instead of of competing for the righ
 
 ### Storage-Based Consensus
 
+Instead of staking just currency, a miner can also calculate nonces/hashes based on available storage space in a system called "proof of capacity". This has greater complexity in hard drive space than CPU power, so it emphasizes hard drive space rather than CPU power. Another one is called "Proof of Spacetime", used by filecoin. This requires miners to proove that they have specific files stored by hash or storage space available, becoming a distributed type of document store.
