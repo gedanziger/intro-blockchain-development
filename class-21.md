@@ -33,3 +33,12 @@ We can use this structure to avoid validating all transactions in real time and 
 
 In it's current state, IOTA has a set of training wheels on through the form of an orderer. While all transactions could theoretically be validated asynchronously through the DAG structure (called "the tangle" in IOTA), it makes use of a Zookeeper instance to force order/consistency on the network. To avoid a single transaction to be submitted once with a few references older in the chain, then again with many references right after (effectively trying to double spend), the network is using a ordering service commonly employed by distributed databases. There are plans, however, to remove this in the future.
 
+### Ripple
+
+In the Ripple blockchain, a set of transactions are all proposed for eventual candidacy in a block. Instead of taking turns signing off on blocks, all transactions are aggregated to a single pool, and those that receive 80% of votes are selected for a block. This system tolerates a 20% rate of bad actors occurring in the system and issuing byzantine faulty data.
+
+### Masternodes
+
+Dash and PivX don't necessarily have a distinctly different consensus mechanism from the others, however there are extra network effects in the form of masternodes. A masternode is often setup by paying in cryptocurrency and putting up a stake, and taking extra responsibilities in the network in accordance with that stake. The staked amount of tokens can be subject to forfeiture if the masternode fails to perform network duties in some instances. To compensate for this, the masternode is then eligible for some percentage of the block rewards.
+
+In Dash, a masternode is eligible for a percentage of the block rewards, if it performs some network duties around privacy and instant transactions. In "Instant Send", a transaction reaches consensus around 10 masternodes in lieu of the entire network. This allows for irreversible transactions faster than the normal confirmation time, allowing more rapid payment remittance (significantly less than bitcoin or regular dash). The other is Private Send, where transactions are mixed with each other, until it is difficult to find their source.
