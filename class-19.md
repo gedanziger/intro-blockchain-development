@@ -21,3 +21,5 @@ Proof of work offers effective security, as there is constant competition to min
 
 Proof of Stake offers a different solution. Instead of of competing for the right to create a new block through computational power, a staker puts up their own tokens for a chance to create a new block and earn its rewards.
 
+### Storage-Based Consensus
+
